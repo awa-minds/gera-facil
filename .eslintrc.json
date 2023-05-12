@@ -2,5 +2,21 @@
   "extends": [
     "@rocketseat/eslint-config/react",
     "next/core-web-vitals"
-  ]
+  ],
+  "plugins": [
+    "eslint-plugin-import-helpers"
+  ],
+  "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "alphabetize": {
+          "ignoreCase": true,
+          "order": "asc"
+        },
+        "groups": [],
+        "newlinesBetween": "always"
+      }
+    ]
+  }
 }
