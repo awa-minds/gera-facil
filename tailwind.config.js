@@ -6,7 +6,18 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        primary: '#0F172A',
+        secondary: '#28364E',
+      },
+      borderColor: {
+        primary: '#878CE9',
+      },
+      fontFamily: {
+        sans: 'var(--font-inter)',
+      },
+    },
   },
   plugins: [],
 }
