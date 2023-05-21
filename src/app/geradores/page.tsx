@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Geradores | Gera Fácil',
+  description: '',
+}
+
 export default function GeradoresPage() {
   return (
     <div>

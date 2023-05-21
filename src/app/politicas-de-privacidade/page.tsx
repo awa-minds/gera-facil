@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Políticas de Privacidade | Gera Fácil',
+  description: '',
+}
+
 export default function PoliticasDePrivacidadePage() {
   return (
     <div>

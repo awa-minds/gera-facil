@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Termos de Uso | Gera Fácil',
+  description: '',
+}
+
 export default function TermosDeUsoPage() {
   return (
     <div>

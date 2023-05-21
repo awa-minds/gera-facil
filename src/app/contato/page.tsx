@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Contato | Gera Fácil',
+  description: '',
+}
+
 export default function ContatoPage() {
   return (
     <div>
