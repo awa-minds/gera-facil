@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+const environment = process.env.NODE_ENV
 const nextConfig = {
-  assetPrefix: '/gera-facil/',
-  basePath: '/gera-facil',
+  assetPrefix: environment === 'production' ? '/gera-facil' : '',
+  basePath: environment === 'production' ? '/gera-facil' : '',
   images: {
-    unoptimized: true,
+    unoptimized: environment === 'production',
   },
-  output: 'export',
-  trailingSlash: true,
+  output: environment === 'production' ? 'export' : 'standalone',
 }
 
 module.exports = nextConfig

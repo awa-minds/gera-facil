@@ -14,6 +14,9 @@ module.exports = {
       borderColor: {
         primary: '#878CE9',
       },
+      colors: {
+        primary: '#878CE9',
+      },
       fontFamily: {
         sans: 'var(--font-inter)',
       },
