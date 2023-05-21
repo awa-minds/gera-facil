@@ -5,11 +5,12 @@ export const metadata = {
 
 export default function ContatoPage() {
   return (
-    <div>
+    <div className="page">
       <h1>Contato</h1>
-      <br />
 
-      <p>Adicionar form de contato...</p>
+      <div className="page-content">
+        <p>Adicionar form de contato...</p>
+      </div>
     </div>
   )
 }

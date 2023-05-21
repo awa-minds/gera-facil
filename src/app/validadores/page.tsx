@@ -5,11 +5,12 @@ export const metadata = {
 
 export default function ValidadoresPage() {
   return (
-    <div>
+    <div className="page">
       <h1>Validadores</h1>
-      <br />
 
-      <p>Adicionar todos os validadores...</p>
+      <div className="page-content">
+        <p>Adicionar todos os validadores...</p>
+      </div>
     </div>
   )
 }

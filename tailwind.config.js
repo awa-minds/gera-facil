@@ -15,7 +15,10 @@ module.exports = {
         primary: '#878CE9',
       },
       colors: {
-        primary: '#878CE9',
+        awa: {
+          100: '#878CE9',
+          300: '#5D6F8C',
+        },
       },
       fontFamily: {
         sans: 'var(--font-inter)',

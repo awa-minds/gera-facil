@@ -1,12 +1,12 @@
 export default function HomePage() {
   return (
-    <div>
-      <h1>Página Inicial</h1>
-      <br />
+    <div className="page">
+      <h1>Geradores, validadores e utilitários de fácil acesso.</h1>
+      <h2>O site com maior número de ferramentas úteis da internet.</h2>
 
-      <p>Um linha de texto aqui...</p>
-      <p>Um linha de texto aqui...</p>
-      <p>Um linha de texto aqui...</p>
+      <div className="page-content">
+        <p>Adicionar resumo de geradores, validadores, etc.</p>
+      </div>
     </div>
   )
 }

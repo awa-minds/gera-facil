@@ -10,10 +10,32 @@ body {
 .menu-header,
 .menu-footer {
   .menu-link {
-    @apply text-white transition-colors hover:text-primary;
+    @apply text-white transition-colors hover:text-awa-100;
 
     &.menu-active {
-      @apply text-primary;
+      @apply text-awa-100;
+    }
+  }
+}
+
+.page {
+  > h1 {
+    @apply flex justify-center text-2xl font-bold;
+  }
+
+  > h2 {
+    @apply flex justify-center text-awa-300;
+  }
+
+  .page-content {
+    @apply mt-8 flex flex-col justify-center text-awa-300;
+
+    p:not(:first-child) {
+      @apply mt-8;
+    }
+
+    p {
+      @apply text-justify;
     }
   }
 }
