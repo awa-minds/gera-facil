@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.menu-header,
+.menu-footer {
+  .menu-link {
+    @apply text-white transition-colors hover:text-primary;
+
+    &.menu-active {
+      @apply text-primary;
+    }
+  }
+}

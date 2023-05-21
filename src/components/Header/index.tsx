@@ -1,16 +1,16 @@
-import Link from 'next/link'
+import DynamicLink from '../DynamicLink'
 
 const Header = () => {
   return (
     <header className="flex justify-between p-6">
-      <div>Header</div>
+      <div />
 
-      <div className="flex items-center justify-center gap-5 text-sm">
-        <Link href="/">Principal</Link>
-        <Link href="/">Geradores</Link>
-        <Link href="/">Validadores</Link>
+      <div className="menu-header flex items-center justify-center gap-5 text-sm">
+        <DynamicLink href="/">Principal</DynamicLink>
+        <DynamicLink href="/geradores">Geradores</DynamicLink>
+        <DynamicLink href="/validadores">Validadores</DynamicLink>
         <div className="h-6 border-l-2 border-primary"></div>
-        <Link href="/">Contato</Link>
+        <DynamicLink href="/contato">Contato</DynamicLink>
       </div>
     </header>
   )
