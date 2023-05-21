@@ -2,7 +2,7 @@ import DynamicLink from '../DynamicLink'
 
 const Footer = () => {
   return (
-    <footer className="px-6 text-center">
+    <footer className="flex flex-col px-6">
       <div className="menu-footer flex justify-center gap-5 border-t border-primary py-4 text-sm">
         <DynamicLink href="/">Principal</DynamicLink>
         <DynamicLink href="/geradores">Geradores</DynamicLink>
@@ -14,7 +14,7 @@ const Footer = () => {
         <DynamicLink href="/contato">Fale Conosco</DynamicLink>
       </div>
 
-      <div className="py-4 text-xs">
+      <div className="flex justify-center py-4 text-xs">
         Copyright © {new Date().getFullYear()} - Gerafácil
       </div>
     </footer>
