@@ -18,6 +18,8 @@ module.exports = {
         awa: {
           100: '#878CE9',
           300: '#5D6F8C',
+          400: '#4E5E83',
+          900: '#0F172A',
         },
       },
       fontFamily: {

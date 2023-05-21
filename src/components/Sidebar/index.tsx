@@ -8,6 +8,21 @@ const Sidebar = () => {
       <DynamicLink href="/">
         <Image src={logo} alt="Gerafácil" priority={true} />
       </DynamicLink>
+
+      <div>
+        <span>Geradores</span>
+        <DynamicLink href="/geradores/gerador-01">Gerador 01</DynamicLink>
+        <DynamicLink href="/geradores/gerador-02">Gerador 02</DynamicLink>
+        <DynamicLink href="/geradores/gerador-03">Gerador 03</DynamicLink>
+        <DynamicLink href="/geradores/gerador-04">Gerador 04</DynamicLink>
+      </div>
+
+      <div>
+        <span>Validadores</span>
+        <DynamicLink href="/validadores/validador-01">Validador 01</DynamicLink>
+        <DynamicLink href="/validadores/validador-02">Validador 02</DynamicLink>
+        <DynamicLink href="/validadores/validador-03">Validador 03</DynamicLink>
+      </div>
     </div>
   )
 }
