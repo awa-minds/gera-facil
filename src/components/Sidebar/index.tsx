@@ -4,14 +4,18 @@ import Image from 'next/image'
 
 const Sidebar = () => {
   return (
-    <div className="sidebar w-78 flex-shrink-0 bg-secondary p-6">
+    <div
+      className={`sidebar h-full w-[305px] flex-shrink-0 overflow-y-auto bg-secondary p-6 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-awa-400`}
+    >
       <DynamicLink href="/">
         <Image src={logo} alt="Gerafácil" priority={true} />
       </DynamicLink>
 
       <div>
         <span>Geradores</span>
-        <DynamicLink href="/geradores/gerador-01">Gerador 01</DynamicLink>
+        <DynamicLink href="/geradores/gerador-senha">
+          Gerador de Senha
+        </DynamicLink>
         <DynamicLink href="/geradores/gerador-02">Gerador 02</DynamicLink>
         <DynamicLink href="/geradores/gerador-03">Gerador 03</DynamicLink>
         <DynamicLink href="/geradores/gerador-04">Gerador 04</DynamicLink>

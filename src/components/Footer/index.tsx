@@ -2,8 +2,8 @@ import DynamicLink from '../DynamicLink'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col p-6">
-      <div className="menu-footer flex justify-center gap-5 border-t border-primary py-6 text-sm">
+    <footer className="flex min-w-[220px] flex-col p-6">
+      <div className="menu-footer flex flex-wrap justify-center gap-5 border-t border-primary py-6 text-sm">
         <DynamicLink href="/">Principal</DynamicLink>
         <DynamicLink href="/geradores">Geradores</DynamicLink>
         <DynamicLink href="/validadores">Validadores</DynamicLink>
