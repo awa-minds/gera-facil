@@ -22,6 +22,18 @@ export const CheckboxGroup = ({ options, setOptions }: CheckboxGroupProps) => {
       return option
     })
 
+    let checkedExists = false
+
+    updatedOptions.forEach((option) => {
+      if (option.checked === true) {
+        checkedExists = true
+      }
+    })
+
+    if (!checkedExists) {
+      updatedOptions[0].checked = true
+    }
+
     setOptions(updatedOptions)
   }
 

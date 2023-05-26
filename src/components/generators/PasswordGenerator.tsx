@@ -17,7 +17,7 @@ export const PasswordGenerator = () => {
   const [password, setPassword] = useState('')
   const [passwordLength, setPasswordLength] = useState(8)
   const [passwordSecure, setPasswordSecure] = useState(1)
-  const [percentage, setPercentage] = useState(0)
+  const [percentage, setPercentage] = useState('33')
   const [percentageColor, setPercentageColor] = useState('')
 
   const characters: { [key: string]: string } = {
@@ -29,13 +29,13 @@ export const PasswordGenerator = () => {
 
   const generateComplexity = () => {
     if (passwordLength <= 8) {
-      setPercentage(33)
+      setPercentage('33')
       setPercentageColor('bg-red-500')
     } else if (passwordLength <= 16) {
-      setPercentage(50)
+      setPercentage('50')
       setPercentageColor('bg-yellow-500')
     } else {
-      setPercentage(100)
+      setPercentage('100')
       setPercentageColor('bg-green-500')
     }
   }

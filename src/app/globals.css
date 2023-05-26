@@ -42,7 +42,7 @@ body {
   }
 
   > h2 {
-    @apply flex justify-center text-awa-300;
+    @apply flex justify-center text-awa-300 text-center;
   }
 
   .page-content {
