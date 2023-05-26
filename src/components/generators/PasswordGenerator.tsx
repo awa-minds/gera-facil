@@ -2,6 +2,7 @@
 
 import { CheckboxGroup } from '../CheckboxGroup'
 import { useEffect, useState } from 'react'
+import { RxClipboardCopy } from 'react-icons/rx'
 import { Range } from 'react-range'
 
 export const PasswordGenerator = () => {
@@ -80,6 +81,10 @@ export const PasswordGenerator = () => {
     setPassword(randomPassword)
   }
 
+  const handleCopyToClipboard = () => {
+    navigator.clipboard.writeText(password)
+  }
+
   useEffect(() => {
     generateComplexity()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -94,10 +99,20 @@ export const PasswordGenerator = () => {
     <div>
       <div className="m-auto flex min-w-[380px] max-w-lg flex-col gap-6 rounded-md bg-white p-6">
         <div className="flex flex-col gap-3">
-          <input
-            value={password}
-            className="w-full rounded-md border border-gray-500 px-4 py-2"
-          />
+          <div className="flex items-center justify-between gap-1">
+            <input
+              value={password}
+              className="w-full rounded-md border border-gray-500 px-4 py-2"
+            />
+
+            <div
+              className="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-md bg-awa-100"
+              onClick={handleCopyToClipboard}
+              title="Copiar senha"
+            >
+              <RxClipboardCopy color="white" />
+            </div>
+          </div>
 
           <Range
             step={1}
