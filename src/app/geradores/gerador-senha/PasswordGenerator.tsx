@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckboxGroup } from '../CheckboxGroup'
+import { CheckboxGroup } from '@/components/CheckboxGroup'
 import { useEffect, useState } from 'react'
 import { RxClipboardCopy } from 'react-icons/rx'
 import { Range } from 'react-range'

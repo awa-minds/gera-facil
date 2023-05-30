@@ -1,4 +1,4 @@
-import { PasswordGenerator } from '@/components/generators'
+import { PasswordGenerator } from './PasswordGenerator'
 
 export const metadata = {
   title: 'Gerador de senha | Gera Fácil',

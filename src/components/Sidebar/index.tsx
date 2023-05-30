@@ -16,11 +16,11 @@ const Sidebar = () => {
         <DynamicLink href="/geradores/gerador-senha">
           Gerador de Senha
         </DynamicLink>
+        <DynamicLink href="/geradores/gerador-cpf">Gerador de CPF</DynamicLink>
+        <DynamicLink href="/geradores/gerador-cnh">Gerador de CNH</DynamicLink>
         <DynamicLink href="/geradores/gerador-qrcode">
           Gerador de QRCode
-          </DynamicLink>
-        <DynamicLink href="/geradores/gerador-03">Gerador 03</DynamicLink>
-        <DynamicLink href="/geradores/gerador-04">Gerador 04</DynamicLink>
+        </DynamicLink>
       </div>
 
       <div>

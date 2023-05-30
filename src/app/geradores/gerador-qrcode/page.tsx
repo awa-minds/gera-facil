@@ -1,4 +1,4 @@
-import { QRCodeGenerator } from '@/components/generators'
+import { QRCodeGenerator } from './QRCodeGenerator'
 
 export const metadata = {
   title: 'Gerador de QR Code | Gera Fácil',
