@@ -18,6 +18,7 @@ const Sidebar = () => {
         </DynamicLink>
         <DynamicLink href="/geradores/gerador-cpf">Gerador de CPF</DynamicLink>
         <DynamicLink href="/geradores/gerador-cnh">Gerador de CNH</DynamicLink>
+        <DynamicLink href="/geradores/gerador-pis">Gerador de PIS</DynamicLink>
         <DynamicLink href="/geradores/gerador-qrcode">
           Gerador de QRCode
         </DynamicLink>
