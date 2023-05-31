@@ -3,31 +3,16 @@
 import { useEffect, useState } from 'react'
 import { RxClipboardCopy } from 'react-icons/rx'
 
-// eslint-disable-next-line no-undef
-export const PISGenerator = (): JSX.Element => {
-  const [pis, setPis] = useState<string>('')
-  const [mask, setMask] = useState<boolean>(true)
+export const PISGenerator = () => {
+  const [pis, setPis] = useState('')
+  const [mask, setMask] = useState(true)
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const generatePis = (): string => {
-    let pisBase = ''
-
-    // Gerando os 9 dígitos iniciais do PIS
-    for (let i = 0; i < 10; i++) {
-      pisBase += Math.floor(Math.random() * 10).toString()
-    }
-
-    // Calculando o dígito verificador do PIS
-    const pisDigitoVerificador = calcularDigitoVerificador(pisBase)
-
-    // Compondo o número completo do PIS
-    const pisCompleto = pisBase + pisDigitoVerificador
-
-    return pisCompleto
+  const generatePIS = () => {
+    const pisTemp = gerarNumerosPIS()
+    formatPIS(pisTemp)
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const formatPIS = (value: string): string => {
+  const formatPIS = (value: string) => {
     if (!mask) {
       value = value.replace(/\D/g, '')
     } else {
@@ -42,7 +27,24 @@ export const PISGenerator = (): JSX.Element => {
           value.substring(10, 11),
         )
     }
-    return value
+    setPis(value)
+  }
+
+  const gerarNumerosPIS = () => {
+    let pisBase = ''
+
+    // Gerando os 9 dígitos iniciais do PIS
+    for (let i = 0; i < 10; i++) {
+      pisBase += Math.floor(Math.random() * 10).toString()
+    }
+
+    // Calculando o dígito verificador do PIS
+    const pisDigitoVerificador = calcularDigitoVerificador(pisBase)
+
+    // Compondo o número completo do PIS
+    const pisCompleto = pisBase + pisDigitoVerificador
+
+    return pisCompleto
   }
 
   const calcularDigitoVerificador = (base: string): string => {
@@ -76,10 +78,13 @@ export const PISGenerator = (): JSX.Element => {
 
   useEffect(() => {
     if (pis === '') {
-      const generatedPis = generatePis()
-      setPis(formatPIS(generatedPis))
+      generatePIS()
+    } else {
+      formatPIS(pis)
     }
-  }, [formatPIS, generatePis, pis]) // Executar apenas no carregamento inicial
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mask])
 
   return (
     <div>
@@ -87,9 +92,8 @@ export const PISGenerator = (): JSX.Element => {
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-between gap-1">
             <input
-              value={pis}
+              defaultValue={pis}
               className="w-full rounded-md border border-gray-500 px-4 py-2"
-              onChange={(e) => setPis(e.target.value)}
             />
 
             <div
@@ -118,7 +122,7 @@ export const PISGenerator = (): JSX.Element => {
 
         <button
           className="rounded-md bg-awa-100 px-6 py-2 text-white transition-colors hover:bg-awa-300"
-          onClick={() => setPis(formatPIS(generatePis()))}
+          onClick={generatePIS}
         >
           Gerar PIS
         </button>

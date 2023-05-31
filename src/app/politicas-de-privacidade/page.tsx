@@ -7,18 +7,17 @@ export default function PoliticasDePrivacidadePage() {
   return (
     <div className="page">
       <h1>Políticas de Privacidade</h1>
-      <br></br>
-      <p>
-        O GeraFácil valoriza a privacidade dos seus usuários e, por isso, adota
-        medidas técnicas e organizacionais para proteger as informações pessoais
-        fornecidas pelos usuários. Esta Política de Privacidade explica como as
-        informações pessoais são coletadas, armazenadas, processadas e usadas
-        pelo GeraFácil. Ao utilizar o site do GeraFácil, você concorda com esta
-        Política de Privacidade.
-      </p>
 
       <div className="page-content">
         <ul>
+          <p>
+            O GeraFácil valoriza a privacidade dos seus usuários e, por isso,
+            adota medidas técnicas e organizacionais para proteger as
+            informações pessoais fornecidas pelos usuários. Esta Política de
+            Privacidade explica como as informações pessoais são coletadas,
+            armazenadas, processadas e usadas pelo GeraFácil. Ao utilizar o site
+            do GeraFácil, você concorda com esta Política de Privacidade.
+          </p>
           <li>1. Coleta de informações pessoais</li>
           <p>
             O GeraFácil não armazena nenhum dado em nossos servidores. Isso
