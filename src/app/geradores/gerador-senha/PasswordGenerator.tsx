@@ -101,7 +101,7 @@ export const PasswordGenerator = () => {
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-between gap-1">
             <input
-              value={password}
+              defaultValue={password}
               className="w-full rounded-md border border-gray-500 px-4 py-2"
             />
 
