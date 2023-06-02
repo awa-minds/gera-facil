@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { PasswordGenerator } from './PasswordGenerator'
+import Page from '@/components/Page'
 
 export const metadata = {
   title: 'Gerador de Senhas Seguras Online | GeraFácil',
@@ -9,25 +10,23 @@ export const metadata = {
     'gerador de senhas, senha segura, criar senha, senha online, gerador de senhas online, gerafacil, gerador de dados, gerador de dados online, gerador online',
   robots: 'index, follow',
   author: 'GeraFácil',
-  viewport: 'width=device-width, initial-scale=1.0',
   canonical: 'https://www.gerafacil.com/geradores/gerador-senha',
 }
 
 export default function GeradorDeSenhaPage() {
   return (
-    <div className="page">
-      <h1>Gerador de Senha</h1>
-      <h2>
-        Ferramenta online para gerar senhas seguras. O gerador de senhas do
+    <Page
+      title="Gerador de Senha"
+      subtitle="Crie Senhas Seguras e Fortes em Instantes"
+      description="Ferramenta online para gerar senhas seguras. O gerador de senhas do
         GeraFácil permite criar senhas aleatórias e robustas, personalizadas de
         acordo com suas necessidades. Ajuste o tamanho da senha deslizando o
         botão e veja uma nova senha ser gerada automaticamente. Se desejar
-        alterar a senha gerada, basta clicar no botão 'Gerar Senha' novamente.
-      </h2>
-
+        alterar a senha gerada, basta clicar no botão 'Gerar Senha' novamente."
+    >
       <div className="page-content">
         <PasswordGenerator />
       </div>
-    </div>
+    </Page>
   )
 }

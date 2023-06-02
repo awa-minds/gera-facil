@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { CPFGenerator } from './CPFGenerator'
+import { PasswordValidator } from './PasswordValidator'
 
 export const metadata = {
-  title: 'Gerador de CPF Online | GeraFácil',
+  title: 'Validador de Senha Online | GeraFácil',
   description:
     'Gere CPFs válidos rapidamente com o GeraFácil, uma ferramenta online gratuita para gerar números de CPF. Experimente agora e obtenha CPFs válidos de forma rápida e fácil.',
   keywords:
@@ -12,18 +12,18 @@ export const metadata = {
   canonical: 'https://www.gerafacil.com/geradores/gerador-cpf',
 }
 
-export default function GeradorDeCPFPage() {
+export default function ValidadorDeSenhaPage() {
   return (
     <div className="page">
-      <h1>Gerador de CPF</h1>
-      <h2>Gere CPFs Válidos Instantaneamente com o Gerador de CPF Online</h2>
+      <h1>Validador de Senha</h1>
+      <h2>Valide se a sua senha está realmente segura.</h2>
       <p>
-        Clique no botão 'Gerar CPF' agora mesmo e obtenha números de CPF
-        aleatórios e válidos de maneira instantânea.
+        Digite a sua senha abaixo e se adeque com as melhores práticas de
+        segurança para senhas.
       </p>
 
       <div className="page-content">
-        <CPFGenerator />
+        <PasswordValidator />
       </div>
     </div>
   )

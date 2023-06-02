@@ -37,16 +37,27 @@ body {
 }
 
 .page {
+  @apply flex flex-col gap-3;
+
   > h1 {
-    @apply flex justify-center text-2xl font-bold;
+    @apply flex text-2xl justify-center text-center xl:text-5xl font-bold;
+  }
+
+  >h2,
+  >p {
+    @apply flex justify-center text-center;
   }
 
   > h2 {
-    @apply flex justify-center text-awa-300 text-center;
+    @apply text-lg;
+  }
+
+  > p {
+    @apply text-awa-300;
   }
 
   .page-content {
-    @apply mt-8 flex flex-col justify-center text-awa-300;
+    @apply mt-8 flex flex-col gap-3 justify-center text-awa-300;
 
     p:not(:first-child) {
       @apply mt-8;
@@ -54,6 +65,10 @@ body {
 
     p {
       @apply text-justify;
+    }
+
+    h3 {
+      @apply text-white;
     }
   }
 }

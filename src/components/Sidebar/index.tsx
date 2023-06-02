@@ -29,9 +29,14 @@ const Sidebar = () => {
 
       <div>
         <span>Validadores</span>
-        <DynamicLink href="/validadores/validador-01">Validador 01</DynamicLink>
-        <DynamicLink href="/validadores/validador-02">Validador 02</DynamicLink>
-        <DynamicLink href="/validadores/validador-03">Validador 03</DynamicLink>
+        <DynamicLink href="/validadores/validador-senha">
+          Validador de Senha
+        </DynamicLink>
+        <DynamicLink href="#">Validador de CPF</DynamicLink>
+        <DynamicLink href="#">Validador de CNH</DynamicLink>
+        <DynamicLink href="#">Validador de PIS</DynamicLink>
+        <DynamicLink href="#">Validador de CNPJ</DynamicLink>
+        <DynamicLink href="#">Validador de QRCode</DynamicLink>
       </div>
     </div>
   )
