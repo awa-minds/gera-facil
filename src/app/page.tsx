@@ -36,8 +36,14 @@ export default function HomePage() {
             href="/validadores/validador-senha"
             title="Validador de Senha"
           />
-          <CardPlus href="#" title="Validador de CPF" />
-          <CardPlus href="#" title="Validador de CNH" />
+          <CardPlus
+            href="/validadores/validador-cpf"
+            title="Validador de CPF"
+          />
+          <CardPlus
+            href="/validadores/validador-cnh"
+            title="Validador de CNH"
+          />
           <CardPlus href="#" title="Validador de CNPJ" />
           <CardPlus href="#" title="Validador de PIS" />
           <CardPlus href="#" title="Validador de QR Code" />

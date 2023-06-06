@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CPFGenerator } from './CPFGenerator'
+import Page from '@/components/Page'
 
 export const metadata = {
   title: 'Gerador de CPF Online | GeraFácil',
@@ -14,17 +15,15 @@ export const metadata = {
 
 export default function GeradorDeCPFPage() {
   return (
-    <div className="page">
-      <h1>Gerador de CPF</h1>
-      <h2>Gere CPFs Válidos Instantaneamente com o Gerador de CPF Online</h2>
-      <p>
-        Clique no botão 'Gerar CPF' agora mesmo e obtenha números de CPF
-        aleatórios e válidos de maneira instantânea.
-      </p>
-
+    <Page
+      title="Gerador de CPF"
+      subtitle="Gere CPFs Válidos Instantaneamente com o Gerador de CPF Online"
+      description="Clique no botão 'Gerar CPF' agora mesmo e obtenha números de CPF
+        aleatórios e válidos de maneira instantânea."
+    >
       <div className="page-content">
         <CPFGenerator />
       </div>
-    </div>
+    </Page>
   )
 }

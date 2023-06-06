@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CNHGenerator } from './CNHGenerator'
+import Page from '@/components/Page'
 
 export const metadata = {
   title: 'Gerador de CNH | Gera Fácil',
@@ -14,17 +15,15 @@ export const metadata = {
 
 export default function GeradorDeCNHPage() {
   return (
-    <div className="page">
-      <h1>Gerador de CNH</h1>
-      <h2>Gere CNHs Válidas Instantaneamente com o Gerador de CNH Online</h2>
-      <p>
-        Clique no botão 'Gerar CNH' agora mesmo e obtenha números de CNH
-        aleatórios e válidos de maneira instantânea.
-      </p>
-
+    <Page
+      title="Gerador de CNH"
+      subtitle="Gere CNHs Válidas Instantaneamente com o Gerador de CNH Online"
+      description="Clique no botão 'Gerar CNH' agora mesmo e obtenha números de CNH
+        aleatórios e válidos de maneira instantânea."
+    >
       <div className="page-content">
         <CNHGenerator />
       </div>
-    </div>
+    </Page>
   )
 }

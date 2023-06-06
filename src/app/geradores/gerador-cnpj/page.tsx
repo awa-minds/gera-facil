@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CNPJGenerator } from './CNPJGenerator'
+import Page from '@/components/Page'
 
 export const metadata = {
   title: 'Gerador de CNPJ Online | GeraFácil',
@@ -14,17 +15,15 @@ export const metadata = {
 
 export default function GeradorDeCNPJPage() {
   return (
-    <div className="page">
-      <h1>Gerador de CNPJ</h1>
-      <h2>Gere CNPJs Válidos Instantaneamente com o Gerador de CNPJ Online</h2>
-      <p>
-        Clique no botão 'Gerar CNPJ' agora mesmo e obtenha números de CNPJ
-        aleatórios e válidos de maneira instantânea.
-      </p>
-
+    <Page
+      title="Gerador de CNPJ"
+      subtitle="Gere CNPJs Válidos Instantaneamente com o Gerador de CNPJ Online"
+      description="Clique no botão 'Gerar CNPJ' agora mesmo e obtenha números de CNPJ
+        aleatórios e válidos de maneira instantânea."
+    >
       <div className="page-content">
         <CNPJGenerator />
       </div>
-    </div>
+    </Page>
   )
 }

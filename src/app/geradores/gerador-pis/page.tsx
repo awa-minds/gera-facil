@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { PISGenerator } from './PISGenerator'
+import Page from '@/components/Page'
 
 export const metadata = {
   title: 'Gerador de PIS Online | GeraFácil',
@@ -14,17 +15,15 @@ export const metadata = {
 
 export default function GeradorDePISPage() {
   return (
-    <div className="page">
-      <h1>Gerador de PIS</h1>
-      <h2>Obtenha Números de PIS Válidos Instantaneamente</h2>
-      <p>
-        Clique no botão 'Gerar PIS' agora mesmo e obtenha números de PIS
-        aleatórios e válidos de maneira instantânea.
-      </p>
-
+    <Page
+      title="Gerador de PIS"
+      subtitle="Obtenha Números de PIS Válidos Instantaneamente"
+      description="Clique no botão 'Gerar PIS' agora mesmo e obtenha números de PIS
+        aleatórios e válidos de maneira instantânea."
+    >
       <div className="page-content">
         <PISGenerator />
       </div>
-    </div>
+    </Page>
   )
 }
