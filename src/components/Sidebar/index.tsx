@@ -40,7 +40,6 @@ const Sidebar = () => {
         </DynamicLink>
         <DynamicLink href="/validadores/validador-pis">Validador de PIS</DynamicLink>
         <DynamicLink href="/validadores/validador-cnpj">Validador de CNPJ</DynamicLink>
-        <DynamicLink href="/validadores/validador-qrcode">Validador de QRCode</DynamicLink>
       </div>
     </div>
   )
