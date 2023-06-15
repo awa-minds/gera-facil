@@ -8,10 +8,10 @@ export const metadata = {
 export default function GeradoresPage() {
   return (
     <div className="page">
-      <h1 className="flex-col">
-        Geradores | GeraFácil
-      </h1>
-      <h2>Abaixo estão todos os geradores disponíveis em nosso site para uso.</h2>
+      <h1 className="flex-col">Geradores | GeraFácil</h1>
+      <h2>
+        Abaixo estão todos os geradores disponíveis em nosso site para uso.
+      </h2>
 
       <div className="page-content">
         <h3>Geradores</h3>
