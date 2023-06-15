@@ -1,19 +1,20 @@
 /** @type {import('next').NextConfig} */
 
 const environment = process.env.NODE_ENV
+const isProduction = environment === 'production'
+const basePath = isProduction ? '/gera-facil' : ''
+
 const nextConfig = {
-  assetPrefix: environment === 'production' ? '/gera-facil' : '',
-  basePath: environment === 'production' ? '/gera-facil' : '',
-  images: {
-    unoptimized: environment === 'production',
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'api.qrserver.com',
-      },
-    ],
+  assetPrefix: basePath ? `${basePath}/` : '',
+  basePath: basePath,
+  env: {
+    basePath: basePath,
   },
-  output: environment === 'production' ? 'export' : 'standalone',
+  images: {
+    unoptimized: isProduction,
+  },
+  output: isProduction ? 'export' : 'standalone',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
