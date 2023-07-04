@@ -7,7 +7,7 @@ export const metadata = {
     'geradores de dados, validadores de dados, gerador de senha, gerador cpf, gerador cnh, gerador pis, gerador qrcode, gerador de cnpj, validador de dados, validador de cpf, validador de senha, validador de pis, validador de qrcode, validador cnh',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com.br'
+  canonical: 'https://www.gerafacil.com.br',
 }
 
 export default function HomePage() {
