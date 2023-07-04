@@ -2,10 +2,8 @@ import CardPlus from '@/components/CardPlus'
 
 export const metadata = {
   title: 'GeraFácil - Gerador e Validador de Dados Online',
-  description: 
-    'Gere e valide dados online facilmente com o GeraFácil. O site mais intuitivo para auxiliar os usuários, estudantes e desenvolvedores com tarefas de dados pessoais.',
-  keywords:
-    'geradores de dados, validadores de dados, gerador de senha, gerador cpf, gerador cnh, gerador pis, gerador qrcode, gerador de cnpj, validador de dados, validador de cpf, validador de senha, validador de pis, validador de qrcode, validador cnh',
+  description: 'Gere e valide dados online facilmente com o GeraFácil. O site mais intuitivo para auxiliar os usuários, estudantes e desenvolvedores com tarefas de dados pessoais',
+  keywords: 'geradores de dados, validadores de dados, gerador de senha, gerador cpf, gerador cnh, gerador pis, gerador qrcode, gerador de cnpj, validador de dados, validador de cpf, validador de senha, validador de pis, validador de qrcode, validador cnh',
   robots: 'index, follow',
   author: 'GeraFácil',
   canonical: 'https://www.gerafacil.com.br',
