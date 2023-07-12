@@ -1,19 +1,21 @@
-import CardPlus from '@/components/CardPlus'
+import CardPlus from "@/components/CardPlus";
 
 export const metadata = {
-  title: 'GeraFácil - Gerador e Validador de Dados Online',
-  description: 'Gere e valide dados online facilmente com o GeraFácil. O site mais intuitivo para auxiliar usuários, estudantes e desenvolvedores com tarefas relacionadas a dados pessoais.',
-  keywords: 'geradores de dados, validadores de dados, gerador de senha, gerador CPF, gerador CNH, gerador PIS, gerador QR Code, gerador de CNPJ, validador de dados, validador de CPF, validador de senha, validador de PIS, validador de QR Code, validador CNH',
-  robots: 'index, follow',
-  author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com.br',
-}
+  title: "GeraFácil - Gerador e Validador de Dados Online",
+  description:
+    "Gere e valide dados online facilmente com o GeraFácil. O site mais intuitivo para auxiliar usuários, estudantes e desenvolvedores com tarefas relacionadas a dados pessoais.",
+  keywords:
+    "geradores de dados, validadores de dados, gerador de senha, gerador CPF, gerador CNH, gerador PIS, gerador QR Code, gerador de CNPJ, validador de dados, validador de CPF, validador de senha, validador de PIS, validador de QR Code, validador CNH",
+  robots: "index, follow",
+  author: "GeraFácil",
+  canonical: "https://www.gerafacil.com.br",
+};
 
 export default function HomePage() {
   return (
     <div className="page">
       <h1 className="flex-col">
-        Gere e/ou valide{' '}
+        Gere e/ou valide{" "}
         <span>
           rapidamente seus <span className="text-awa-100">{`{dados}`}</span>
         </span>
@@ -59,5 +61,5 @@ export default function HomePage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
