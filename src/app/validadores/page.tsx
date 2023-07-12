@@ -8,10 +8,10 @@ export const metadata = {
 export default function ValidadoresPage() {
   return (
     <div className="page">
-      <h1 className="flex-col">
-        Validadores | GeraFácil
-      </h1> 
-      <h2>Abaixo estão todos os validadores disponíveis em nosso site para uso.</h2>
+      <h1 className="flex-col">Validadores | GeraFácil</h1>
+      <h2>
+        Abaixo estão todos os validadores disponíveis em nosso site para uso.
+      </h2>
 
       <div className="page-content">
         <h3>Validadores</h3>
@@ -28,8 +28,14 @@ export default function ValidadoresPage() {
             href="/validadores/validador-cnh"
             title="Validador de CNH"
           />
-          <CardPlus href="/validadores/validador-pis" title="Validador de PIS" />
-          <CardPlus href="/validadores/validador-cnpj" title="Validador de CNPJ" />
+          <CardPlus
+            href="/validadores/validador-pis"
+            title="Validador de PIS"
+          />
+          <CardPlus
+            href="/validadores/validador-cnpj"
+            title="Validador de CNPJ"
+          />
         </div>
       </div>
     </div>
