@@ -1,12 +1,14 @@
 'use client'
 
+import { Inter } from 'next/font/google'
+import { useRouter } from 'next/router'
+import { ReactNode, useEffect, useState } from 'react'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
-import { Inter } from 'next/font/google'
-import { ReactNode, useState } from 'react'
 import { BsChevronLeft } from 'react-icons/bs'
 import { CgMenu } from 'react-icons/cg'
+import * as gtag from '../lib/gtag'
 
 import './globals.css'
 
@@ -17,6 +19,19 @@ const inter = Inter({
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [sidebarVisible, setSidebarVisible] = useState(false)
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      gtag.pageview(url)
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
   return (
     <html lang="pt-BR">
