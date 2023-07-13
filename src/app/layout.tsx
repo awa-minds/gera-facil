@@ -1,9 +1,9 @@
 'use client'
 
+import * as gtag from '../lib/gtag'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
-import * as gtag from '../lib/gtag'
 import { Inter } from 'next/font/google'
 import { useRouter } from 'next/router'
 import { ReactNode, useEffect, useState } from 'react'
