@@ -4,9 +4,10 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
 import { Inter } from 'next/font/google'
-import { ReactNode, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import { BsChevronLeft } from 'react-icons/bs'
 import { CgMenu } from 'react-icons/cg'
+import { initGA, logPageView } from '../utils/analytics'
 
 import './globals.css'
 
@@ -15,8 +16,22 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+declare global {
+  interface Window {
+    GA_INITIALIZED: boolean
+  }
+}
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [sidebarVisible, setSidebarVisible] = useState(false)
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  }, [])
 
   return (
     <html lang="pt-BR">
