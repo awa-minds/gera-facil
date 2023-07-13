@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import * as gtag from '../lib/gtag' // Certifique-se de ter o arquivo 'gtag.ts' ou 'gtag.js' no diretório 'lib'
+import * as gtag from '../lib/gtag'
+import React, { useEffect } from 'react'
 
 type AppProps = {
   Component: React.ComponentType
