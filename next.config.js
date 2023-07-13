@@ -10,6 +10,9 @@ const nextConfig = {
   env: {
     basePath: basePath,
   },
+  env: {
+    GA_TRACKING_ID: 'G-4M7FX549LS', // Substitua pelo seu código de rastreamento
+  },
   images: {
     unoptimized: isProduction,
   },
@@ -18,9 +21,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-module.exports = {
-  env: {
-    GA_TRACKING_ID: 'G-4M7FX549LS', // Substitua pelo seu código de rastreamento
-  },
-};
-
