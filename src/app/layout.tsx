@@ -1,5 +1,8 @@
 'use client'
 
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import Sidebar from 'components/Sidebar'
 import { useEffect, ReactNode, useState } from 'react'
 import { useRouter } from 'next/router'
 import { BsChevronLeft } from 'react-icons/bs'
@@ -7,9 +10,6 @@ import { CgMenu } from 'react-icons/cg'
 import { Inter } from 'next/font/google'
 
 import * as gtag from '../lib/gtag'
-import Footer from 'components/Footer'
-import Header from 'components/Header'
-import Sidebar from 'components/Sidebar'
 import './globals.css'
 
 const inter = Inter({
