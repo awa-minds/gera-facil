@@ -18,8 +18,8 @@ const inter = Inter({
 })
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const [sidebarVisible, setSidebarVisible] = useState(false)
   const router = useRouter()
+  const [sidebarVisible, setSidebarVisible] = useState(false)
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
