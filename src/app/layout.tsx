@@ -51,13 +51,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
 
-        <div
-          className={`fixed z-[998] h-full w-[305px] ${
-            sidebarVisible ? 'block' : 'hidden'
-          } md:relative md:block`}
-        >
-          <Sidebar />
-        </div>
+        {typeof window !== 'undefined' && (
+          <div
+            className={`fixed z-[998] h-full w-[305px] ${
+              sidebarVisible ? 'block' : 'hidden'
+            } md:relative md:block`}
+          >
+            <Sidebar />
+          </div>
+        )}
 
         <div className="flex-grow overflow-y-auto scrollbar-thin scrollbar-track-slate-800 scrollbar-thumb-awa-400">
           <div className="flex min-h-screen flex-col">
