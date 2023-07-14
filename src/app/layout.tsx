@@ -1,8 +1,3 @@
-'use client'
-
-import Footer from 'components/Footer'
-import Header from 'components/Header'
-import Sidebar from 'components/Sidebar'
 import { useEffect, ReactNode, useState } from 'react'
 import { useRouter } from 'next/router'
 import { BsChevronLeft } from 'react-icons/bs'
@@ -10,6 +5,9 @@ import { CgMenu } from 'react-icons/cg'
 import { Inter } from 'next/font/google'
 
 import * as gtag from '../lib/gtag'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import Sidebar from 'components/Sidebar'
 import './globals.css'
 
 const inter = Inter({
@@ -17,7 +15,7 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+function RootLayoutWithRouter({ children }: { children: ReactNode }) {
   const router = useRouter()
   const [sidebarVisible, setSidebarVisible] = useState(false)
 
@@ -26,14 +24,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       gtag.pageview(url)
     }
 
-    if (router) {
-      router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteChange)
 
-      return () => {
-        router.events.off('routeChangeComplete', handleRouteChange)
-      }
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
     }
-  }, [router])
+  }, [router.events])
 
   return (
     <html lang="pt-BR">
@@ -75,4 +71,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </body>
     </html>
   )
+}
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return <RootLayoutWithRouter>{children}</RootLayoutWithRouter>
 }
