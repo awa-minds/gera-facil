@@ -33,9 +33,14 @@ export const Contact = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
+    <form
+      className="mx-auto max-w-md rounded-lg border p-4 shadow-md"
+      onSubmit={handleSubmit}
+    >
+      <div className="mb-4">
+        <label htmlFor="name" className="mb-1 block font-medium">
+          Nome:
+        </label>
         <input
           type="text"
           id="name"
@@ -43,10 +48,13 @@ export const Contact = () => {
           value={formData.name}
           onChange={handleChange}
           required
+          className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
+      <div className="mb-4">
+        <label htmlFor="email" className="mb-1 block font-medium">
+          Email:
+        </label>
         <input
           type="email"
           id="email"
@@ -54,19 +62,28 @@ export const Contact = () => {
           value={formData.email}
           onChange={handleChange}
           required
+          className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="message">Message:</label>
+      <div className="mb-4">
+        <label htmlFor="message" className="mb-1 block font-medium">
+          Mensagem:
+        </label>
         <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
           required
+          className="w-full resize-none rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        className="w-full rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+      >
+        Enviar
+      </button>
     </form>
   )
 }
