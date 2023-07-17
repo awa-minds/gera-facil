@@ -1,15 +1,13 @@
 'use client'
 
-import { useEffect, ReactNode, useState } from 'react'
-import { useRouter } from 'next/router'
-import { BsChevronLeft } from 'react-icons/bs'
-import { CgMenu } from 'react-icons/cg'
-import { Inter } from 'next/font/google'
-
-import * as gtag from '../lib/gtag'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
+import { Inter } from 'next/font/google'
+import { ReactNode, useState } from 'react'
+import { BsChevronLeft } from 'react-icons/bs'
+import { CgMenu } from 'react-icons/cg'
+
 import './globals.css'
 
 const inter = Inter({
@@ -17,21 +15,8 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-function RootLayoutWithRouter({ children }: { children: ReactNode }) {
-  const router = useRouter()
+export default function RootLayout({ children }: { children: ReactNode }) {
   const [sidebarVisible, setSidebarVisible] = useState(false)
-
-  useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      gtag.pageview(url)
-    }
-
-    router.events.on('routeChangeComplete', handleRouteChange)
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
 
   return (
     <html lang="pt-BR">
@@ -51,15 +36,13 @@ function RootLayoutWithRouter({ children }: { children: ReactNode }) {
           </div>
         </div>
 
-        {typeof window !== 'undefined' && (
-          <div
-            className={`fixed z-[998] h-full w-[305px] ${
-              sidebarVisible ? 'block' : 'hidden'
-            } md:relative md:block`}
-          >
-            <Sidebar />
-          </div>
-        )}
+        <div
+          className={`fixed z-[998] h-full w-[305px] ${
+            sidebarVisible ? 'block' : 'hidden'
+          } md:relative md:block`}
+        >
+          <Sidebar />
+        </div>
 
         <div className="flex-grow overflow-y-auto scrollbar-thin scrollbar-track-slate-800 scrollbar-thumb-awa-400">
           <div className="flex min-h-screen flex-col">
@@ -73,8 +56,4 @@ function RootLayoutWithRouter({ children }: { children: ReactNode }) {
       </body>
     </html>
   )
-}
-
-export default function RootLayout({ children }: { children: ReactNode }) {
-  return <RootLayoutWithRouter>{children}</RootLayoutWithRouter>
 }
