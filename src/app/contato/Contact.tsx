@@ -11,9 +11,9 @@ export const Contact = () => {
   })
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target
+    const { name, value } = event.target
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
