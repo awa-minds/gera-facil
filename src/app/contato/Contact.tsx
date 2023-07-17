@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import axios from 'axios'
+import React, { useState, ChangeEvent, FormEvent } from 'react'
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ export const Contact = () => {
   })
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target
     setFormData((prevFormData) => ({
@@ -20,7 +20,7 @@ export const Contact = () => {
     }))
   }
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     try {
@@ -71,5 +71,3 @@ export const Contact = () => {
     </form>
   )
 }
-
-export default Contact
