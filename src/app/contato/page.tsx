@@ -1,3 +1,6 @@
+import { Contact } from './Contact'
+import Page from '@/components/Page'
+
 export const metadata = {
   title: 'Contato | Gera Fácil',
   description: '',
@@ -5,12 +8,14 @@ export const metadata = {
 
 export default function ContatoPage() {
   return (
-    <div className="page">
-      <h1>Contato</h1>
-
+    <Page
+      title="Fale Conosco"
+      subtitle="Entre em contato conosco, envie críticas, sugestões de novos geradores, validadores ou afins, pedidos ou informações diversas relacionadas ao site."
+      description="Preencha o formulário abaixo e aguarde o nosso contato! Se atente aos campos obrigatórios!"
+    >
       <div className="page-content">
-        <p>Adicionar form de contato...</p>
+        <Contact />
       </div>
-    </div>
+    </Page>
   )
 }
