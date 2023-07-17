@@ -19,6 +19,11 @@ const GoogleAnalytics = ({ gaId }: { gaId: string }) => (
         `,
       }}
     ></Script>
+    <Script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4101074959936183"
+      crossOrigin="anonymous"
+    ></Script>
   </>
 )
 
