@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${inter.variable} flex h-screen bg-primary font-sans text-white`}
       >
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         ) : null}
         <div
           className={`${
