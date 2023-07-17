@@ -1,6 +1,7 @@
 'use client'
 
 import Footer from 'components/Footer'
+import GoogleAnalytics from 'components/GoogleAnalytics'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
 import { Inter } from 'next/font/google'
@@ -23,6 +24,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${inter.variable} flex h-screen bg-primary font-sans text-white`}
       >
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
         <div
           className={`${
             sidebarVisible ? 'left-[288px] w-[321px]' : 'left-[18px] w-[50px]'
