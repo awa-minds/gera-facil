@@ -4,10 +4,9 @@ import Footer from 'components/Footer'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
 import { Inter } from 'next/font/google'
-import { ReactNode, useState, useEffect } from 'react'
+import { ReactNode, useState } from 'react'
 import { BsChevronLeft } from 'react-icons/bs'
 import { CgMenu } from 'react-icons/cg'
-import ReactGA from 'react-ga'
 
 import './globals.css'
 
@@ -16,20 +15,8 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const initGA = () => {
-  ReactGA.initialize('G-4M7FX549LS')
-}
-
-const logPageView = () => {
-  ReactGA.pageview(window.location.pathname)
-}
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [sidebarVisible, setSidebarVisible] = useState(false)
-  useEffect(() => {
-    initGA()
-    logPageView()
-  }, [])
 
   return (
     <html lang="pt-BR">
