@@ -80,7 +80,7 @@ export const Contact = () => {
       </div>
       <button
         type="submit"
-        className="w-full rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+        className="rounded-md bg-awa-100 px-6 py-2 text-white transition-colors hover:bg-awa-300"
       >
         Enviar
       </button>
