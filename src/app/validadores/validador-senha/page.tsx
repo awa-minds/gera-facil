@@ -5,10 +5,9 @@ import Page from '@/components/Page'
 export const metadata = {
   title: 'Validador de Senha Online | GeraFácil',
   description:
-    'Gere CPFs válidos rapidamente com o GeraFácil, uma ferramenta online gratuita para gerar números de CPF. Experimente agora e obtenha CPFs válidos de forma rápida e fácil.',
+    'Verifique a segurança de suas senhas com o Validador de Senha do GeraFácil. Garanta proteção para suas contas com facilidade e precisão.',
   keywords:
-    'gerador de CPF, gerador de CPF online, CPF válido, número de CPF, GeraFácil, ferramenta online, gerador de dados, gerador de dados online, gerador de cpf com dados, gerador e validador de cpf, geradores de cpf, cpf gerador online',
-  robots: 'index, follow',
+    'Validador de Senha GeraFácil, Verificação de senha, Segurança de senha, Teste de senha, Senha forte, Senha confiável, Verificador de força de senha, Proteção de contas, Senha segura, Validar senha, Verificar senha, Ferramenta de validação de senha, Avaliação de senha, Validar senha online, Verificação de segurança de senha.',
   author: 'GeraFácil',
   canonical: 'https://www.gerafacil.com.br/validadores/validador-senha',
 }
