@@ -3,7 +3,7 @@ import CardPlus from '@/components/CardPlus'
 export const metadata = {
   title: 'Validadores | GeraFácil',
   description:
-    'Otimize a precisão dos seus dados com GeraFácil! Descubra nossos validadores de dados eficientes para garantir informações confiáveis e corretas. Valide números, dados pessoais e muito mais com facilidade. Aumente a qualidade dos seus dados e tome decisões mais seguras. Experimente agora e simplifique sua validação de dados de forma rápida e confiável.',
+    'Valide dados com GeraFácil! Garanta informações confiáveis e corretas. Números, dados pessoais e mais. Decisões seguras e validação rápida. Experimente agora!',
   keywords:
     'Validadores de dados, Validação de informações, Verificação de dados pessoais, Validação de CPF, Validar números, Validador online, Ferramenta de validação, Verificador de e-mails, Validação de CNPJ, Validar documentos, Validação de telefone, Dados corretos, Verificação de cadastros, Validação de endereço, Verificador de dados pessoais, validador cpf, validador cnpj, validador cnh, validador de senha, validador de pis, GeraFácil.',
   robots: 'index, follow',
