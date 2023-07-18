@@ -10,7 +10,7 @@ export const metadata = {
     'validador de CNPJ, validador de CNPJ online, CNPJ válido, número de CNPJ, GeraFácil, ferramenta online, validador de dados, validador de dados online, validador de cnpj com dados, gerador e validador de cnpj, validadores de cnpj, cnpj validador online',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/validadores/validador-cnpj',
+  canonical: 'https://www.gerafacil.com.br/validadores/validador-cnpj',
 }
 
 export default function ValidadorDeCNPJPage() {

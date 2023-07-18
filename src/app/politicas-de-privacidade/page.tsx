@@ -1,6 +1,12 @@
 export const metadata = {
   title: 'Políticas de Privacidade | Gera Fácil',
-  description: '',
+  description:
+    'Protegendo sua privacidade com compromisso e transparência. Conheça nossa Política de Privacidade no GeraFácil e saiba como tratamos seus dados com responsabilidade. Nossa política abrange informações sobre coleta, uso e armazenamento de dados pessoais. Sua confiança é nossa prioridade, e estamos comprometidos em proteger suas informações. Leia mais sobre nossas práticas de privacidade e sinta-se seguro ao usar nossos serviços.',
+  keywords:
+    'Políticas de Privacidade GeraFácil, Proteção de dados, Segurança da informação, Tratamento de dados pessoais, Privacidade online, Política de uso de dados,  Armazenamento de dados, Uso responsável de dados, Confidencialidade de dados, Transparência de informações, Conformidade legal, Política de cookies, Proteção da privacidade do usuário',
+  robots: 'index, follow',
+  author: 'GeraFácil',
+  canonical: 'https://www.gerafacil.com.br/politicas-de-privacidade/',
 }
 
 export default function PoliticasDePrivacidadePage() {

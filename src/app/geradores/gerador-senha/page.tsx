@@ -10,7 +10,7 @@ export const metadata = {
     'gerador de senhas, senha segura, criar senha, senha online, gerador de senhas online, gerafacil, gerador de dados, gerador de dados online, gerador online',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/geradores/gerador-senha',
+  canonical: 'https://www.gerafacil.com.br/geradores/gerador-senha',
 }
 
 export default function GeradorDeSenhaPage() {

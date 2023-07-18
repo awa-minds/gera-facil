@@ -3,14 +3,14 @@ import { CNHGenerator } from './CNHGenerator'
 import Page from '@/components/Page'
 
 export const metadata = {
-  title: 'Gerador de CNH | Gera Fácil',
+  title: 'Gerador de CNH Online | GeraFácil',
   description:
     'Obtenha uma CNH válida de forma rápida e fácil com o nosso gerador de CNH válido do GeraFácil. Emita a sua CNH com segurança e confiança.',
   keywords:
     'gerador de CNH válido, gerar CNH, CNH válida, gerador dados, gerador dados online, gerador de CNH, gerador cnh, documento de habilitação, carteira de motorista',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/geradores/gerador-cnh',
+  canonical: 'https://www.gerafacil.com.br/geradores/gerador-cnh',
 }
 
 export default function GeradorDeCNHPage() {

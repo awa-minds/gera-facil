@@ -10,7 +10,7 @@ export const metadata = {
     'validador de PIS, validador de PIS online, PIS válido, número de PIS, GeraFácil, ferramenta online, validador de dados, validador de dados online, validador de pis com dados, gerador e validador de pis, validadores de pis, pis validador online',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/validadores/validador-pis',
+  canonical: 'https://www.gerafacil.com.br/validadores/validador-pis',
 }
 
 export default function ValidadorDePISPage() {

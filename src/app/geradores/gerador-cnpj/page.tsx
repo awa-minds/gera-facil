@@ -10,7 +10,7 @@ export const metadata = {
     'gerador de cnpj, gerador de cnpj online, gerador de cnpj online válido, gerador de cnpj válido, gerar cnpj, cnpj válido, cnpj online, gerador de dados, gerador de dados online, gerafácil',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/geradores/gerador-cnpj',
+  canonical: 'https://www.gerafacil.com.br/geradores/gerador-cnpj',
 }
 
 export default function GeradorDeCNPJPage() {

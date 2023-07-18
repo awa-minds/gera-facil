@@ -9,7 +9,7 @@ export const metadata = {
     'gerador de QR Code, QR Code online, gerar QR Code, criar QR Code, QR Code válido, gerador QR Code, gerador QRCode, gerador de dados, gerador de dados online, GeraFácil',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/geradores/gerador-qrcode',
+  canonical: 'https://www.gerafacil.com.br/geradores/gerador-qrcode',
 }
 
 export default function GeradorDeQRCodePage() {

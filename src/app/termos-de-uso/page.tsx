@@ -1,6 +1,12 @@
 export const metadata = {
   title: 'Termos de Uso | Gera Fácil',
-  description: '',
+  description:
+    'Conheça nossos Termos de Uso no GeraFácil e descubra como fornecemos uma experiência segura e confiável para todos os usuários. Nossa página de Termos de Uso abrange as diretrizes para acesso, utilização dos serviços e responsabilidades. A transparência é nossa prioridade, e queremos garantir que você compreenda seus direitos e obrigações ao utilizar nossos recursos. Leia mais e utilize nossos serviços com tranquilidade, sabendo que estamos comprometidos com a excelência em todas as interações.',
+  keywords:
+    'Termos de Uso GeraFácil, Políticas de Utilização, Responsabilidades do Usuário, Aceitação de Termos, Condições de Uso, GeraFácil',
+  robots: 'index, follow',
+  author: 'GeraFácil',
+  canonical: 'https://www.gerafacil.com.br/termos-de-uso/',
 }
 
 export default function TermosDeUsoPage() {

@@ -10,7 +10,7 @@ export const metadata = {
     'gerador de PIS, gerador de PIS válido, PIS válido online, número de PIS, gerador de PIS online, gerador de dados, gerador de dados online, GeraFácil',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/geradores/gerador-pis',
+  canonical: 'https://www.gerafacil.com.br/geradores/gerador-pis',
 }
 
 export default function GeradorDePISPage() {

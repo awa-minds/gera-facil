@@ -10,7 +10,7 @@ export const metadata = {
     'validador de CPF, validador de CPF online, CPF válido, número de CPF, GeraFácil, ferramenta online, validador de dados, validador de dados online, validador de cpf com dados, gerador e validador de cpf, validadores de cpf, cpf validador online',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/validadores/validador-cpf',
+  canonical: 'https://www.gerafacil.com.br/validadores/validador-cpf',
 }
 
 export default function ValidadorDeCPFPage() {

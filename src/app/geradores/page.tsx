@@ -2,7 +2,13 @@ import CardPlus from '@/components/CardPlus'
 
 export const metadata = {
   title: 'Geradores | GeraFácil',
-  description: 'Geradores',
+  description:
+    'Construa sua jornada de dados com GeraFácil! Descubra uma coleção completa de geradores de dados eficientes para todas as suas necessidades. Agilize testes, desenvolvimento e projetos com informações realistas e confiáveis. Experimente agora e simplifique o processo de criação de dados com facilidade e precisão.',
+  keywords:
+    'Geradores de dados, Geração de dados, Dados autênticos, Dados realistas, Ferramentas de geração de dados, Gerador online, Dados fictícios, Dados personalizados, Testes com dados,   Dados precisos, Simulação de dados, Dados para desenvolvimento, Geração rápida de informações, Gerador de informações, Gerador de dados aleatórios, Ferramenta de geração de informações, gerador cpf, gerador senha, gerador cnh, gerador cnpj, gerador qrcode, gerador pis, GeraFácil',
+  robots: 'index, follow',
+  author: 'GeraFácil',
+  canonical: 'https://www.gerafacil.com.br/geradores/',
 }
 
 export default function GeradoresPage() {

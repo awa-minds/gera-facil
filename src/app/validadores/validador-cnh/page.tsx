@@ -10,7 +10,7 @@ export const metadata = {
     'validador de CNH, validador de CNH online, CNH válido, número de CNH, GeraFácil, ferramenta online, validador de dados, validador de dados online, validador de cnh com dados, gerador e validador de cnh, validadores de cnh, cnh validador online',
   robots: 'index, follow',
   author: 'GeraFácil',
-  canonical: 'https://www.gerafacil.com/validadores/validador-cnh',
+  canonical: 'https://www.gerafacil.com.br/validadores/validador-cnh',
 }
 
 export default function ValidadorDeCNHPage() {
