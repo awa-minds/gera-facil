@@ -9,8 +9,7 @@ export const metadata = {
   robots: 'index, follow',
   author: 'GeraFácil',
   canonical: 'https://www.gerafacil.com.br',
-  name: 'google-site-verification',
-  content: 'fy0_KcqyT2MEMz66F1ExYsigsIUSMm4FBG5iz2fngro',
+  'google-site-verification': 'fy0_KcqyT2MEMz66F1ExYsigsIUSMm4FBG5iz2fngro',
 }
 
 export default function HomePage() {
