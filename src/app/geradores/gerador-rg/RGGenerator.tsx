@@ -6,7 +6,6 @@ import { RxClipboardCopy } from 'react-icons/rx'
 export const RGGenerator = () => {
   const [rg, setRg] = useState('')
   const [mask, setMask] = useState(true)
-
   const generateRG = () => {
     const rgTemp = gerarNumerosRG()
     formatRG(rgTemp)
@@ -14,7 +13,7 @@ export const RGGenerator = () => {
 
   const formatRG = (value: string) => {
     if (!mask) {
-      value = value.replace(/\D/g, '')
+      value = value.toString().replace(/\D/g, '')
     } else {
       value = value.toString()
       value =
@@ -31,10 +30,31 @@ export const RGGenerator = () => {
 
   const gerarNumerosRG = () => {
     let numeros = ''
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 8; i++) {
       numeros += Math.floor(Math.random() * 10)
     }
-    return numeros
+    const rgDigitoVerificador = calculateRGDigit(numeros)
+    const rgCompleto = numeros + rgDigitoVerificador
+
+    return rgCompleto
+  }
+
+  const calculateRGDigit = (value: string) => {
+    const weights = [2, 3, 4, 5, 6, 7, 8, 9]
+    let sum = 0
+
+    for (let i = 0; i < value.length; i++) {
+      sum += parseInt(value[i]) * weights[i]
+    }
+
+    const remainder = sum % 11
+    let digit = 11 - remainder
+
+    if (digit > 9) {
+      digit = 0
+    }
+
+    return digit.toString()
   }
 
   const handleCopyToClipboard = () => {
@@ -47,6 +67,7 @@ export const RGGenerator = () => {
     } else {
       formatRG(rg)
     }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mask])
 
@@ -56,13 +77,12 @@ export const RGGenerator = () => {
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-between gap-1">
             <input
-              value={rg}
+              defaultValue={rg}
               className="w-full rounded-md border border-gray-500 px-4 py-2"
-              readOnly
             />
 
             <div
-              className="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-md bg-blue-500"
+              className="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-md bg-awa-100"
               onClick={handleCopyToClipboard}
               title="Copiar RG"
             >
@@ -86,7 +106,7 @@ export const RGGenerator = () => {
         </div>
 
         <button
-          className="rounded-md bg-blue-500 px-6 py-2 text-white transition-colors hover:bg-blue-700"
+          className="rounded-md bg-awa-100 px-6 py-2 text-white transition-colors hover:bg-awa-300"
           onClick={generateRG}
         >
           Gerar RG

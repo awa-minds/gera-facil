@@ -5,9 +5,9 @@ import Page from '@/components/Page'
 export const metadata = {
   title: 'Gerador de RG Online | GeraFácil',
   description:
-    'Gere CPFs válidos rapidamente com o GeraFácil, uma ferramenta online gratuita para gerar números de CPF. Experimente agora e obtenha CPFs válidos de forma rápida e fácil.',
+    'Obtenha um número de RG válido de forma rápida e fácil com o nosso gerador de RG válido do GeraFácil. Gere o seu RG com segurança e confiança.',
   keywords:
-    'gerador de CPF, gerador de CPF online, CPF válido, número de CPF, GeraFácil, ferramenta online, gerador de dados, gerador de dados online, gerador de cpf com dados, gerador e validador de cpf, geradores de cpf, cpf gerador online',
+    'gerador de RG, gerador de RG online, RG válido, número de rg, GeraFácil, ferramenta online, gerador de dados, gerador de dados online, gerador de rg com dados, gerador e validador de rg, geradores de rg, rg gerador online',
   robots: 'index, follow',
   author: 'GeraFácil',
   canonical: 'https://www.gerafacil.com.br/geradores/gerador-rg',
