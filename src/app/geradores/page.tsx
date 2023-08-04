@@ -25,8 +25,8 @@ export default function GeradoresPage() {
           <CardPlus href="/geradores/gerador-senha" title="Gerador de Senha" />
           <CardPlus href="/geradores/gerador-cpf" title="Gerador de CPF" />
           <CardPlus href="/geradores/gerador-cnh" title="Gerador de CNH" />
-          <CardPlus href="/geradores/gerador-cnpj" title="Gerador de CNPJ" />
           <CardPlus href="/geradores/gerador-pis" title="Gerador de PIS" />
+          <CardPlus href="/geradores/gerador-cnpj" title="Gerador de CNPJ" />
           <CardPlus
             href="/geradores/gerador-qrcode"
             title="Gerador de QR Code"
