@@ -24,6 +24,7 @@ export default function GeradoresPage() {
         <div className="mt-2 grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <CardPlus href="/geradores/gerador-senha" title="Gerador de Senha" />
           <CardPlus href="/geradores/gerador-cpf" title="Gerador de CPF" />
+          <CardPlus href="/geradores/gerador-rg" title="Gerador de RG" />
           <CardPlus href="/geradores/gerador-cnh" title="Gerador de CNH" />
           <CardPlus href="/geradores/gerador-pis" title="Gerador de PIS" />
           <CardPlus href="/geradores/gerador-cnpj" title="Gerador de CNPJ" />
@@ -31,7 +32,10 @@ export default function GeradoresPage() {
             href="/geradores/gerador-qrcode"
             title="Gerador de QR Code"
           />
-          <CardPlus href="/geradores/gerador-cpf" title="Gerador de CPF" />
+          <CardPlus
+            href="/geradores/gerador-renavam"
+            title="Gerador de Renavam"
+          />
         </div>
       </div>
     </div>

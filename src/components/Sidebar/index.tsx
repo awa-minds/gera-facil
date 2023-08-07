@@ -26,6 +26,9 @@ const Sidebar = () => {
         <DynamicLink href="/geradores/gerador-qrcode">
           Gerador de QRCode
         </DynamicLink>
+        <DynamicLink href="/geradores/gerador-renavam">
+          Gerador de Renavam
+        </DynamicLink>
       </div>
 
       <div>
