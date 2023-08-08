@@ -17,46 +17,79 @@ export const RenavamGenerator = () => {
       value = value.toString().replace(/\D/g, '')
     } else {
       value = value.toString()
-      value =
-        value.substring(0, 2) +
-        '.' +
-        value.substring(2, 5) +
-        '.' +
-        value.substring(5, 8) +
-        '.' +
-        value.substring(8, 11) +
-        '-' +
-        value.substring(11, 12)
+      value = value.substring(0, 10) + '-' + value.substring(10)
     }
     setRenavam(value)
   }
 
   const gerarNumerosRenavam = () => {
     let numeros = ''
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < 10; i++) {
       numeros += Math.floor(Math.random() * 10)
     }
+    console.log(numeros)
     const renavamDigitoVerificador = calculateRenavamDigit(numeros)
+    console.log(renavamDigitoVerificador)
     const renavamCompleto = numeros + renavamDigitoVerificador
 
     return renavamCompleto
   }
 
-  const calculateRenavamDigit = (value: string) => {
-    const weights = [3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
-    let sum = 0
+  type ClearValueOptions = {
+    fillZerosAtLeft?: boolean
+    trimAtRight?: boolean
+    rejectEmpty?: boolean
+  }
 
-    for (let i = 0; i < value.length; i++) {
-      sum += parseInt(value[i]) * weights[i]
+  function clearValue(
+    value: string | number,
+    length: number,
+    options?: ClearValueOptions,
+  ): string {
+    let stringValue = String(value).substr(0, length)
+
+    if (options?.trimAtRight) {
+      stringValue = stringValue.trimRight()
     }
 
-    const remainder = sum % 11
-    if (remainder === 0 || remainder === 1) {
-      return '0'
-    } else {
-      const digit = 11 - remainder
-      return digit.toString()
+    if (options?.rejectEmpty && stringValue === '') {
+      throw new Error('Value is empty.')
     }
+
+    if (options?.fillZerosAtLeft && stringValue.length < length) {
+      stringValue = stringValue.padStart(length, '0')
+    }
+
+    return stringValue
+  }
+
+  function sumElementsByMultipliers(
+    value: string,
+    multiplier: string | number[],
+  ): number {
+    if (typeof multiplier === 'string') {
+      multiplier = multiplier.split('').map((n) => Number(n))
+    }
+
+    return multiplier.reduce(
+      (accu: number, curr: any, i: number) =>
+        accu + curr * Number(value.charAt(i)),
+      0,
+    )
+  }
+
+  const calculateRenavamDigit = (value: string | number): string => {
+    const renavam = clearValue(value, 10, {
+      fillZerosAtLeft: true,
+      trimAtRight: true,
+      rejectEmpty: true,
+    })
+
+    const sum1 =
+      sumElementsByMultipliers(renavam, [3, 2, 9, 8, 7, 6, 5, 4, 3, 2]) * 10
+    const dv1 = sum1 % 11 >= 10 ? 0 : sum1 % 11
+
+    return `${dv1}`
   }
 
   const handleCopyToClipboard = () => {
