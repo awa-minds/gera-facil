@@ -29,6 +29,9 @@ const Sidebar = () => {
         <DynamicLink href="/geradores/gerador-renavam">
           Gerador de Renavam
         </DynamicLink>
+        <DynamicLink href="/geradores/gerador-imagem">
+          Gerador de Imagem
+        </DynamicLink>
       </div>
 
       <div>
