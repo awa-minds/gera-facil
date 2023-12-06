@@ -52,6 +52,12 @@ const Sidebar = () => {
           Validador de CNPJ
         </DynamicLink>
       </div>
+      <div>
+        <span>Strings e Funções</span>
+        <DynamicLink href="/strings/contador-caracteres">
+          Contador de Caracteres
+        </DynamicLink>
+      </div>
     </div>
   )
 }
