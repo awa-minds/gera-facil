@@ -1,39 +1,38 @@
 'use client'
 
-import { useState } from 'react';
+import { useState } from 'react'
 
 export function Contact() {
-  const [sentMessage, setSentMessage] = useState("");
-  const ACCESS_KEY = "42755748-5ad6-44b8-aa11-3a57d0c2ed8e"; // Acesso à chave de ambiente
+  const [sentMessage, setSentMessage] = useState('')
 
   async function handleSubmit(e: any) {
     e.preventDefault();
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
       body: JSON.stringify({
-        access_key: ACCESS_KEY, // Usando a chave de ambiente
+        access_key: process.env.REACT_APP_TOKEN_MAIL, // Usando a chave de ambiente
         name: e.target.name.value,
         email: e.target.email.value,
-        subject: "GERAFACIL",
+        subject: 'GERAFACIL',
         message: e.target.message.value,
       }),
-    });
-    const result = await response.json();
+    })
+    const result = await response.json()
     if (result.success) {
-      setSentMessage("Mensagem enviada com sucesso!");
-      e.target.reset(); // Limpa os campos do formulário após o envio bem-sucedido
+      setSentMessage('Mensagem enviada com sucesso!')
+      e.target.reset() // Limpa os campos do formulário após o envio bem-sucedido
     }
   }
 
   return (
     <>
-      <form className="mx-auto max-w-md rounded-lg border p-4 shadow-md" onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="name" className="mb-1 block font-medium">Nome:</label>
+      <form className='mx-auto max-w-md rounded-lg border p-4 shadow-md' onSubmit={handleSubmit}>
+        <div className='mb-4'>
+          <label htmlFor='name' className='mb-1 block font-medium'>Nome:</label>
           <input type="text" name="name" required placeholder="Seu Nome" className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
         <div className="mb-4">
