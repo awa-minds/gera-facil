@@ -35,8 +35,7 @@ export function Contact() {
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
-          <label
-            htmlFor="name"
+          <label htmlFor="name"
             className="mb-1 block font-medium">
             Nome:
           </label>
@@ -49,8 +48,7 @@ export function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label
-            htmlFor="email"
+          <label htmlFor="email"
             className="mb-1 block font-medium">
             Email:
           </label>
@@ -63,8 +61,7 @@ export function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label
-            htmlFor="message"
+          <label htmlFor="message"
             className="mb-1 block font-medium">
             Mensagem:
           </label>
