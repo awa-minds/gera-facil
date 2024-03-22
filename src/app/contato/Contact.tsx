@@ -74,9 +74,10 @@ export function Contact() {
           className="w-full bg-awa-100 px-6 py-2 text-white transition-colors hover:bg-awa-300">
           Enviar
         </button>
+
       </form>
       {sentMessage && (
-        <div className="bg-green-500 text-white px-4 py-2 fixed bottom-5 right-5 rounded-lg">
+        <div className="fixed bottom-5 right-5 rounded-lg bg-green-500 px-4 py-2 text-white">
           <p>{sentMessage}</p>
         </div>
       )}
