@@ -30,7 +30,10 @@ export function Contact() {
 
   return (
     <>
-      <form className="mx-auto max-w-md rounded-lg border p-4 shadow-md" onSubmit={handleSubmit} >
+      <form 
+        className="mx-auto max-w-md rounded-lg border p-4 shadow-md" 
+        onSubmit={handleSubmit}
+      >
         <div className="mb-4">
           <label htmlFor="name" className="mb-1 block font-medium">Nome: </label>
           <input type="text" name="name" required placeholder="Seu Nome" className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
