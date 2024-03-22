@@ -35,7 +35,11 @@ export function Contact() {
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
-          <label htmlFor="name" className="mb-1 block font-medium">Nome:</label>
+          <label
+            htmlFor="name"
+            className="mb-1 block font-medium">
+            Nome:
+          </label>
           <input
             type="text"
             name="name"
@@ -45,7 +49,11 @@ export function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="mb-1 block font-medium">Email:</label>
+          <label
+            htmlFor="email"
+            className="mb-1 block font-medium">
+            Email:
+          </label>
           <input
             type="email"
             name="email"
@@ -55,11 +63,15 @@ export function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="mb-1 block font-medium">Mensagem:</label>
-          <textarea 
-            name="message" 
-            required 
-            placeholder="Digite a mensagem:" 
+          <label
+            htmlFor="message"
+            className="mb-1 block font-medium">
+            Mensagem:
+          </label>
+          <textarea
+            name="message"
+            required
+            placeholder="Digite a mensagem:"
             className="w-full resize-none rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
           </textarea>
