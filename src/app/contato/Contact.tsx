@@ -30,8 +30,8 @@ export function Contact() {
 
   return (
     <>
-      <form 
-        className="mx-auto max-w-md rounded-lg border p-4 shadow-md" 
+      <form
+        className="mx-auto max-w-md rounded-lg border p-4 shadow-md"
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
