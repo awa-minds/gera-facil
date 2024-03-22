@@ -13,6 +13,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: isProduction,
+    domains: ['api.qrserver.com'],
   },
   output: isProduction ? 'export' : 'standalone',
   trailingSlash: true,
