@@ -35,18 +35,40 @@ export function Contact() {
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
-          <label htmlFor="name" className="mb-1 block font-medium">Nome: </label>
-          <input type="text" name="name" required placeholder="Seu Nome" className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <label htmlFor="name" className="mb-1 block font-medium">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Seu Nome"
+            className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="mb-1 block font-medium">Email: </label>
-          <input type="email" name="email" required placeholder="email@example.com" className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <label htmlFor="email" className="mb-1 block font-medium">Email:</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+            className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="mb-1 block font-medium">Mensagem: </label>
-          <textarea name="message" required placeholder="Digite a mensagem:" className="w-full resize-none rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <label htmlFor="message" className="mb-1 block font-medium">Mensagem:</label>
+          <textarea 
+            name="message" 
+            required 
+            placeholder="Digite a mensagem:" 
+            className="w-full resize-none rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+          </textarea>
         </div>
-        <button type="submit" className="w-full bg-awa-100 px-6 py-2 text-white transition-colors hover:bg-awa-300">Enviar</button>
+        <button
+          type="submit"
+          className="w-full bg-awa-100 px-6 py-2 text-white transition-colors hover:bg-awa-300">
+          Enviar
+        </button>
       </form>
       {sentMessage && (
         <div className="bg-green-500 text-white px-4 py-2 fixed bottom-5 right-5 rounded-lg">
