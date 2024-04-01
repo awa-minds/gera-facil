@@ -36,6 +36,11 @@ export default function GeradoresPage() {
             href="/geradores/gerador-renavam"
             title="Gerador de Renavam"
           />
+          <CardPlus
+            href="/geradores/gerador-imagem"
+            title="Gerador de Imagem AI"
+          />
+          <CardPlus href="/geradores/gerador-uuid" title="Gerador de UUID v4" />
         </div>
       </div>
     </div>

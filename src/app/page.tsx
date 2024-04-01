@@ -46,6 +46,7 @@ export default function HomePage() {
             href="/geradores/gerador-imagem"
             title="Gerador de Imagem AI"
           />
+          <CardPlus href="/geradores/gerador-uuid" title="Gerador de UUID v4" />
         </div>
         <h3>Validadores</h3>
         <div className="mt-2 grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

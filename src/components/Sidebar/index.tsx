@@ -32,6 +32,9 @@ const Sidebar = () => {
         <DynamicLink href="/geradores/gerador-imagem">
           Gerador de Imagem
         </DynamicLink>
+        <DynamicLink href="/geradores/gerador-uuid">
+          Gerador de UUID v4
+        </DynamicLink>
       </div>
 
       <div>
