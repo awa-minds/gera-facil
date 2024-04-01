@@ -13,7 +13,7 @@ export const metadata = {
   canonical: 'https://www.gerafacil.com.br/geradores/gerador-uuid',
 }
 
-export default function GeradorDeCNHPage() {
+export default function GeradorDeUUIDPage() {
   return (
     <Page
       title="Gerador de UUID v4"

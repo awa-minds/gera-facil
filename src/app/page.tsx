@@ -70,6 +70,10 @@ export default function HomePage() {
             href="/validadores/validador-cnpj"
             title="Validador de CNPJ"
           />
+          <CardPlus
+            href="/validadores/validador-uuid"
+            title="Validador de UUID"
+          />
         </div>
         <h3>Strings e Funções</h3>
         <div className="mt-2 grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

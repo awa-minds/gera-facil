@@ -42,6 +42,10 @@ export default function ValidadoresPage() {
             href="/validadores/validador-cnpj"
             title="Validador de CNPJ"
           />
+          <CardPlus
+            href="/validadores/validador-uuid"
+            title="Validador de UUID"
+          />
         </div>
       </div>
     </div>

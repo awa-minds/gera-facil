@@ -54,6 +54,9 @@ const Sidebar = () => {
         <DynamicLink href="/validadores/validador-cnpj">
           Validador de CNPJ
         </DynamicLink>
+        <DynamicLink href="/validadores/validador-uuid">
+          Validador de UUID
+        </DynamicLink>
       </div>
       <div>
         <span>Strings e Funções</span>
