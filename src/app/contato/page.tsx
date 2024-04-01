@@ -2,7 +2,7 @@ import { Contact } from './Contact'
 import Page from '@/components/Page'
 
 export const metadata = {
-  title: 'Contato | Gera Fácil',
+  title: 'Contato | GeraFácil',
   description:
     'Entre em contato com o GeraFácil e simplifique suas interações! Nossa página de contato é o caminho mais fácil para tirar dúvidas, obter suporte personalizado ou compartilhar suas sugestões. Conecte-se conosco agora mesmo e descubra como podemos ajudar a atender às suas necessidades. Estamos aqui para tornar sua experiência conosco ainda mais eficiente e agradável.',
   keywords:
