@@ -67,6 +67,9 @@ const Sidebar = () => {
       <div>
         <span>Saúde</span>
         <DynamicLink href="/saude/calcular-imc">Calculadora de IMC</DynamicLink>
+        <DynamicLink href="/saude/calculadora-gestacional">
+          Calculadora Gestacional
+        </DynamicLink>
       </div>
     </div>
   )
