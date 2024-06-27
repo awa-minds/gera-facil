@@ -15,7 +15,7 @@ export default function TermosDeUsoPage() {
       <h1>Termos de Uso</h1>
 
       <div className="page-content">
-        <p>
+        <p className="text-white">
           Ao acessar o GeraFácil, o usuário deve estar ciente e concordar com os
           termos de uso estabelecidos neste documento. Caso não concorde com
           estes termos, solicitamos que não utilize o site. O GeraFácil se
@@ -26,7 +26,7 @@ export default function TermosDeUsoPage() {
       <br></br>
       <h1>Licença de Uso</h1>
       <div className="page-content">
-        <p>
+        <p className="text-white">
           O GeraFácil concede uma licença de uso limitada aos usuários que
           concordam e cumprem os termos de uso. O GeráFacil reserva-se o direito
           de restringir o acesso ao site para qualquer usuário, a qualquer
@@ -36,7 +36,7 @@ export default function TermosDeUsoPage() {
       <br></br>
       <h1>Responsabilidade de Uso</h1>
       <div className="page-content">
-        <p>
+        <p className="text-white">
           Todos os conteúdos apresentados neste site têm finalidade
           exclusivamente informativa e não devem ser considerados completos ou
           atualizados. Eles não substituem a orientação de um profissional, como
