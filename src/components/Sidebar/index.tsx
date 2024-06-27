@@ -35,6 +35,9 @@ const Sidebar = () => {
         <DynamicLink href="/geradores/gerador-uuid">
           Gerador de UUID v4
         </DynamicLink>
+        <DynamicLink href="/geradores/gerador-titulo-eleitor">
+          Gerador de Título de Eleitor
+        </DynamicLink>
       </div>
 
       <div>

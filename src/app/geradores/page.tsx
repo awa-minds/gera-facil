@@ -41,6 +41,10 @@ export default function GeradoresPage() {
             title="Gerador de Imagem AI"
           />
           <CardPlus href="/geradores/gerador-uuid" title="Gerador de UUID v4" />
+          <CardPlus
+            href="/geradores/gerador-titulo-eleitor"
+            title="Gerador de Título de Eleitor"
+          />
         </div>
       </div>
     </div>
