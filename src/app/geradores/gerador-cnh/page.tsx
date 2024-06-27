@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Aviso } from './Aviso'
 import { CNHGenerator } from './CNHGenerator'
 import Page from '@/components/Page'
 
@@ -23,6 +24,7 @@ export default function GeradorDeCNHPage() {
     >
       <div className="page-content">
         <CNHGenerator />
+        <Aviso />
       </div>
     </Page>
   )

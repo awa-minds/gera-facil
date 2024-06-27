@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Aviso } from './Aviso'
 import { CPFGenerator } from './CPFGenerator'
 import Page from '@/components/Page'
 
@@ -23,6 +24,7 @@ export default function GeradorDeCPFPage() {
     >
       <div className="page-content">
         <CPFGenerator />
+        <Aviso />
       </div>
     </Page>
   )

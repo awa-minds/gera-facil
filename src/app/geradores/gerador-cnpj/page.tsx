@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Aviso } from './Aviso'
 import { CNPJGenerator } from './CNPJGenerator'
 import Page from '@/components/Page'
 
@@ -23,6 +24,7 @@ export default function GeradorDeCNPJPage() {
     >
       <div className="page-content">
         <CNPJGenerator />
+        <Aviso />
       </div>
     </Page>
   )

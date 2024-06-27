@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Aviso } from './Aviso'
 import { PISGenerator } from './PISGenerator'
 import Page from '@/components/Page'
 
@@ -23,6 +24,7 @@ export default function GeradorDePISPage() {
     >
       <div className="page-content">
         <PISGenerator />
+        <Aviso />
       </div>
     </Page>
   )

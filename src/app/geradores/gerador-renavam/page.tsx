@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Aviso } from './Aviso'
 import { RenavamGenerator } from './RenavamGenerator'
 import Page from '@/components/Page'
 
@@ -23,6 +24,7 @@ export default function GeradorDeRenavamPage() {
     >
       <div className="page-content">
         <RenavamGenerator />
+        <Aviso />
       </div>
     </Page>
   )
