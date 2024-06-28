@@ -60,6 +60,9 @@ const Sidebar = () => {
         <DynamicLink href="/validadores/validador-uuid">
           Validador de UUID
         </DynamicLink>
+        <DynamicLink href="/validadores/validador-titulo-eleitor">
+          Validador de Título de Eleitor
+        </DynamicLink>
       </div>
       <div>
         <span>Strings e Funções</span>

@@ -78,6 +78,10 @@ export default function HomePage() {
             href="/validadores/validador-uuid"
             title="Validador de UUID"
           />
+          <CardPlus
+            href="/validadores/validador-titulo-eleitor"
+            title="Validador de Título de Eleitor"
+          />
         </div>
         <h3>Strings e Funções</h3>
         <div className="mt-2 grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

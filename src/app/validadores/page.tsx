@@ -46,6 +46,10 @@ export default function ValidadoresPage() {
             href="/validadores/validador-uuid"
             title="Validador de UUID"
           />
+          <CardPlus
+            href="/validadores/validador-titulo-eleitor"
+            title="Validador de Título de Eleitor"
+          />
         </div>
       </div>
     </div>
