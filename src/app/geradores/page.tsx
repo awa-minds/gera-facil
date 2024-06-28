@@ -45,6 +45,7 @@ export default function GeradoresPage() {
             href="/geradores/gerador-titulo-eleitor"
             title="Gerador de Título de Eleitor"
           />
+          <CardPlus href="/geradores/gerador-hash" title="Gerador de Hash" />
         </div>
       </div>
     </div>

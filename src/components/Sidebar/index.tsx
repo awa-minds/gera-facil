@@ -38,6 +38,9 @@ const Sidebar = () => {
         <DynamicLink href="/geradores/gerador-titulo-eleitor">
           Gerador de Título de Eleitor
         </DynamicLink>
+        <DynamicLink href="/geradores/gerador-hash">
+          Gerador de Hash
+        </DynamicLink>
       </div>
 
       <div>
